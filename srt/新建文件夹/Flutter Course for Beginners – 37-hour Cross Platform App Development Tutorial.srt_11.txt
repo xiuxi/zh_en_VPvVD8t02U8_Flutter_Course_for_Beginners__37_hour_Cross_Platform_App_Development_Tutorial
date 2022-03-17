@@ -1,0 +1,2868 @@
+1
+11:58:25,272 --> 11:58:29,360
+say context block auto import
+
+
+2
+11:58:29,360 --> 11:58:33,512
+and we're going to call it password reset it's one of the keys i define and
+
+
+3
+11:58:33,512 --> 11:58:38,160
+in here we're going to say context lock password reset dialog prompt okay
+
+
+4
+11:58:38,160 --> 11:58:42,552
+and we have an ok button so you now by this point that we have an ok key as
+
+
+5
+11:58:42,552 --> 11:58:46,800
+well in our in our arb file
+
+
+6
+11:58:46,800 --> 11:58:51,272
+so now we've done basically we're done uh localizing the show password recent
+
+
+7
+11:58:51,272 --> 11:58:57,040
+dialogue uh uh show password reset sends dialogue
+
+
+8
+11:58:57,120 --> 11:59:03,592
+okay the next uh dialog is um forgot password so let's go to
+
+
+9
+11:59:03,592 --> 11:59:06,480
+that screen that sorry this is not a dialogue this
+
+
+10
+11:59:06,480 --> 11:59:11,040
+is actually a view so we're going to go to forgot password view
+
+
+11
+11:59:11,040 --> 11:59:14,872
+here i mean when it comes to views our job is a little bit more difficult
+
+
+12
+11:59:14,872 --> 11:59:18,400
+because up until this point we've pretty much everywhere
+
+
+13
+11:59:18,400 --> 11:59:22,640
+used constants like if you look at this is a constant string here's a constant
+
+
+14
+11:59:22,640 --> 11:59:26,400
+text here is constant so everywhere that
+
+
+15
+11:59:26,400 --> 11:59:31,272
+we're going to localize our strings and we were using const before we have to
+
+
+16
+11:59:31,272 --> 11:59:35,512
+remove that cons now because our localized properties inside arv funds
+
+
+17
+11:59:35,512 --> 11:59:40,720
+are unfortunately not defined as const and i don't really know the reasoning
+
+
+18
+11:59:40,720 --> 11:59:43,272
+behind that simply maybe because there are
+
+
+19
+11:59:43,272 --> 11:59:47,272
+getters and maybe getters can't be constant or there are some
+
+
+20
+11:59:47,272 --> 11:59:53,192
+other problems with the generation maybe that um the flutter team decided that
+
+
+21
+11:59:53,192 --> 11:59:56,800
+well these can't be constants but that's something that's the truth that we have
+
+
+22
+11:59:56,800 --> 12:00:01,440
+to live with at the moment so let's go ahead and find all our strings
+
+
+23
+12:00:01,440 --> 12:00:06,232
+and we're going to start localizing them one at a time before i got password view
+
+
+24
+12:00:06,232 --> 12:00:11,360
+so here in this show error dialog and i've called this key forgot password
+
+
+25
+12:00:11,360 --> 12:00:15,912
+view generic error so let's remove this string and just say
+
+
+26
+12:00:15,912 --> 12:00:19,832
+context lock let's auto import log
+
+
+27
+12:00:19,832 --> 12:00:24,160
+and we say forgot password
+
+
+28
+12:00:25,272 --> 12:00:29,040
+view generic error and i'm going to put a comma at the end so it's formatted
+
+
+29
+12:00:29,040 --> 12:00:33,832
+nicely so let's go to this forgot password title itself so i'm gonna
+
+
+30
+12:00:33,832 --> 12:00:36,720
+remove the const remember i just explained that so we're gonna say
+
+
+31
+12:00:36,720 --> 12:00:41,040
+context log and we're gonna say forgot password that's the key i've defined
+
+
+32
+12:00:41,040 --> 12:00:45,360
+and you can also see its description here and you can see it says forgot
+
+
+33
+12:00:45,360 --> 12:00:49,040
+password okay in english this message translates to
+
+
+34
+12:00:49,040 --> 12:00:54,320
+forgot password okay so this thing i've called it forgot
+
+
+35
+12:00:54,320 --> 12:00:59,360
+password view prompt so let's remove the const remove the string itself and we're
+
+
+36
+12:00:59,360 --> 12:01:01,832
+going to say
+
+
+37
+12:01:01,912 --> 12:01:07,272
+context log forgot password prompt forgot password view prompt and put a
+
+
+38
+12:01:07,272 --> 12:01:10,552
+comma at the end and let's have a look at the documentation for this as you can
+
+
+39
+12:01:10,552 --> 12:01:13,360
+see it says if you forgot your password simply enter your email and we'll send
+
+
+40
+12:01:13,360 --> 12:01:17,592
+you a password recent link okay so that's one thing and then in your
+
+
+41
+12:01:17,592 --> 12:01:21,360
+email address um it says input decoration your email
+
+
+42
+12:01:21,360 --> 12:01:24,480
+address because that's a forgot password screen let's go here and have a look at
+
+
+43
+12:01:24,480 --> 12:01:29,832
+it see how it looks like here i forgot my password so here's that
+
+
+44
+12:01:29,832 --> 12:01:32,640
+little input decoration so
+
+
+45
+12:01:32,640 --> 12:01:37,040
+i can see i've called it email text field placeholder so let's remove this
+
+
+46
+12:01:37,040 --> 12:01:42,232
+const and in here we're going to say context log email placeholder text field
+
+
+47
+12:01:42,232 --> 12:01:45,360
+okay let's go ahead and have a look at this
+
+
+48
+12:01:45,360 --> 12:01:50,720
+one so let's remove the const it says send me password recent link and i can
+
+
+49
+12:01:50,720 --> 12:01:57,760
+see that i've called that forgot password view send me link so
+
+
+50
+12:01:57,760 --> 12:02:04,552
+context log for god password forgot send me link here and put a comma at the
+
+
+51
+12:02:04,552 --> 12:02:08,800
+end so the dart formatter gets busy with formatting the code and
+
+
+52
+12:02:08,800 --> 12:02:13,040
+in here back to login view i can see that i've called it forgot
+
+
+53
+12:02:13,040 --> 12:02:17,912
+password view back to login so context
+
+
+54
+12:02:17,912 --> 12:02:21,360
+here context lock forgot
+
+
+55
+12:02:21,360 --> 12:02:25,592
+back okay so and this is this is a technique that you can also use like if
+
+
+56
+12:02:25,592 --> 12:02:28,552
+you want to get like a property like this that's quite long name and you want
+
+
+57
+12:02:28,552 --> 12:02:33,040
+to get the name immediately right you could just write a few keywords of that
+
+
+58
+12:02:33,040 --> 12:02:37,272
+name for instance i know that for god and back are quite unique names so if i
+
+
+59
+12:02:37,272 --> 12:02:41,272
+say forgot back it it's gonna show me that so
+
+
+60
+12:02:41,272 --> 12:02:45,440
+it has this like partial search kind of in its intelligence which is very very
+
+
+61
+12:02:45,440 --> 12:02:49,360
+useful the next thing that we have to do is to
+
+
+62
+12:02:49,360 --> 12:02:53,360
+go ahead and localize our login view so i'm going to close the screen forgot
+
+
+63
+12:02:53,360 --> 12:02:57,680
+password view and go to login view login view right here and we're going to
+
+
+64
+12:02:57,680 --> 12:03:00,480
+start at the bottom at the top of the screen and
+
+
+65
+12:03:00,480 --> 12:03:04,480
+we'll remove this unused import right there in login view
+
+
+66
+12:03:04,480 --> 12:03:09,512
+and let's go ahead and start by uh localizing our dialogs so the first one
+
+
+67
+12:03:09,512 --> 12:03:13,040
+is cannot find a user with the entered credentials and i've called it cannot
+
+
+68
+12:03:13,040 --> 12:03:16,320
+find user or login view cannot find user so i'm
+
+
+69
+12:03:16,320 --> 12:03:21,272
+just going to say context.log let's auto import log
+
+
+70
+12:03:22,960 --> 12:03:27,440
+or it was already imported okay that's great and let's just say it is called
+
+
+71
+12:03:27,440 --> 12:03:31,832
+login error cannot find user cannot find user okay
+
+
+72
+12:03:31,832 --> 12:03:35,360
+the next one i'm going to put some commas in here get dark formatter to do
+
+
+73
+12:03:35,360 --> 12:03:38,800
+its job correctly and i'm going to press command s to save the file and that's
+
+
+74
+12:03:38,800 --> 12:03:42,552
+going to format the file for me for wrong credentials i've called it login
+
+
+75
+12:03:42,552 --> 12:03:48,480
+error wrong credentials so context log and wrong credentials
+
+
+76
+12:03:48,480 --> 12:03:52,640
+next one is authentication error and we just call it login error author so
+
+
+77
+12:03:52,640 --> 12:03:59,680
+context lock author okay so that's that one as well now at the top of the login
+
+
+78
+12:03:59,680 --> 12:04:02,640
+login view we have this little text that says please log in your account in order
+
+
+79
+12:04:02,640 --> 12:04:07,040
+to interact with and create notes and this one i can see
+
+
+80
+12:04:07,040 --> 12:04:11,832
+i've just called a login view prompt but i wonder what
+
+
+81
+12:04:11,832 --> 12:04:16,720
+happened to our title as you can see we have this my title now that we're in the
+
+
+82
+12:04:16,720 --> 12:04:20,080
+login view it is a good time to actually go and get rid of that okay so i'm going
+
+
+83
+12:04:20,080 --> 12:04:23,592
+to open um intel
+
+
+84
+12:04:23,592 --> 12:04:27,512
+e and arb and i'm going to kill this basically my
+
+
+85
+12:04:27,512 --> 12:04:33,760
+title and i suggest that you also go to the swedish file which is intel sv and
+
+
+86
+12:04:33,760 --> 12:04:37,760
+kill this title as well okay so we've removed that and i'm gonna get rid of
+
+
+87
+12:04:37,760 --> 12:04:41,592
+that then i'm gonna hot restart so that the code generation
+
+
+88
+12:04:41,592 --> 12:04:46,552
+kicks in and as you can see in here my title isn't valid anymore and in this i
+
+
+89
+12:04:46,552 --> 12:04:50,480
+mean this title is called now login if you can look at the documentation in
+
+
+90
+12:04:50,480 --> 12:04:54,552
+here you can see in english it just says login fantastic
+
+
+91
+12:04:54,552 --> 12:04:59,440
+so let's remove this constant here from the prompt as well and we're just going
+
+
+92
+12:04:59,440 --> 12:05:04,480
+to say context lock and let's just say login prompt so i'm going to do a prompt
+
+
+93
+12:05:04,480 --> 12:05:09,680
+okay so for the enter email um
+
+
+94
+12:05:09,680 --> 12:05:14,000
+text field placeholder here enter your email here we're gonna remove the const
+
+
+95
+12:05:14,000 --> 12:05:19,912
+and let's just say context lock and we're gonna say email placeholder
+
+
+96
+12:05:19,912 --> 12:05:22,960
+okay and we also have an enter your password
+
+
+97
+12:05:22,960 --> 12:05:26,800
+here placeholder so let's remove the cons in here i'm just gonna say context
+
+
+98
+12:05:26,800 --> 12:05:30,400
+lock password
+
+
+99
+12:05:30,400 --> 12:05:35,040
+placeholder okay password field password text field placeholder that's the full
+
+
+100
+12:05:35,040 --> 12:05:40,000
+name and we have this uh login in here so
+
+
+101
+12:05:40,000 --> 12:05:44,080
+what we need to do is just to change this text as well so let's remove the
+
+
+102
+12:05:44,080 --> 12:05:49,360
+content here i'm just gonna say context dot walk
+
+
+103
+12:05:49,360 --> 12:05:53,912
+login and i forgot my password so i'm going to
+
+
+104
+12:05:53,912 --> 12:05:59,832
+say context lock and i believe it's called forgot password
+
+
+105
+12:05:59,832 --> 12:06:04,640
+login view forgot password okay it's not a constant anymore and put a
+
+
+106
+12:06:04,640 --> 12:06:07,832
+comma here it's just good practice to put comma at the end of your parameters
+
+
+107
+12:06:07,832 --> 12:06:12,000
+even if it's just one argument that you're passing to a function i mean my
+
+
+108
+12:06:12,000 --> 12:06:15,680
+reason this is a little bit of a side though but my reasoning is that any time
+
+
+109
+12:06:15,680 --> 12:06:20,232
+in the future anybody anybody wants to add new parameters to this text widget
+
+
+110
+12:06:20,232 --> 12:06:23,680
+then they will have to go and put that comma in there but if you as a
+
+
+111
+12:06:23,680 --> 12:06:27,192
+programmer who wrote this code in the beginning you put the comma in there
+
+
+112
+12:06:27,192 --> 12:06:30,800
+you're kind of like acknowledging the fact that hey i appreciate your time you
+
+
+113
+12:06:30,800 --> 12:06:34,800
+may be wanting to add now you may be wanting to add new parameters to this
+
+
+114
+12:06:34,800 --> 12:06:39,360
+and i've already prepared this for you so if you don't do this if i want to as
+
+
+115
+12:06:39,360 --> 12:06:43,120
+a programmer add new parameters in here i have to go and say oh well okay comma
+
+
+116
+12:06:43,120 --> 12:06:46,872
+commandments go here blah blah but if you'd added that already i'll
+
+
+117
+12:06:46,872 --> 12:06:51,120
+just say enter and then write my parameters
+
+
+118
+12:06:53,832 --> 12:06:59,192
+okay great so what we can do now is to scroll forward here and localize the
+
+
+119
+12:06:59,192 --> 12:07:02,872
+rest of these properties and it can't i can just see here that we have one
+
+
+120
+12:07:02,872 --> 12:07:07,272
+property left here which at the moment says not registered yet registered here
+
+
+121
+12:07:07,272 --> 12:07:11,512
+so let's go ahead and remove the const as we usually do then and say contacts
+
+
+122
+12:07:11,512 --> 12:07:15,760
+lock and i can see it's called not registered
+
+
+123
+12:07:15,760 --> 12:07:19,760
+so let's use that and a comma here so we prepared for the next programmer so to
+
+
+124
+12:07:19,760 --> 12:07:23,272
+say and we could just say now that we have
+
+
+125
+12:07:23,272 --> 12:07:27,592
+successfully localized our login view at the moment so we could just close this
+
+
+126
+12:07:27,592 --> 12:07:31,912
+tab the next step is to localize our
+
+
+127
+12:07:31,912 --> 12:07:36,872
+register view so the register view also has quite a few things that we have to
+
+
+128
+12:07:36,872 --> 12:07:40,400
+localize so let's go ahead and go to register view
+
+
+129
+12:07:40,400 --> 12:07:44,400
+and while we're here i mean this is what i'm again i
+
+
+130
+12:07:44,400 --> 12:07:47,680
+when i started this course i wanted you to become a software engineer even if
+
+
+131
+12:07:47,680 --> 12:07:51,512
+you were like a designer a ux or whatever or project
+
+
+132
+12:07:51,512 --> 12:07:55,760
+manager and you have to put yourself and your yourself in the shoes of a software
+
+
+133
+12:07:55,760 --> 12:08:00,160
+developer software developer you're always in like time constraint usually
+
+
+134
+12:08:00,160 --> 12:08:03,512
+our time concern to deliver but at the same time
+
+
+135
+12:08:03,512 --> 12:08:08,480
+when you stumble upon something that is quickly fixed please do it on
+
+
+136
+12:08:08,480 --> 12:08:11,912
+right there uh at that point because if you leave these things they're gonna
+
+
+137
+12:08:11,912 --> 12:08:15,512
+pile up and many small things that could be
+
+
+138
+12:08:15,512 --> 12:08:19,592
+corrected on the fly if you just leave them they're gonna become a big pile and
+
+
+139
+12:08:19,592 --> 12:08:23,360
+then you're not gonna be able to have enough time to fix them all so while
+
+
+140
+12:08:23,360 --> 12:08:26,640
+we're here we have two unused imports let's just remove them because that's
+
+
+141
+12:08:26,640 --> 12:08:30,480
+just good practice not to have unused imports
+
+
+142
+12:08:30,480 --> 12:08:33,760
+now let's go to our register view here we can see there's quite a lot of errors
+
+
+143
+12:08:33,760 --> 12:08:37,912
+there are four errors so the first thing i'm gonna do is to put commas at the end
+
+
+144
+12:08:37,912 --> 12:08:40,552
+of these right there and i'm going to press
+
+
+145
+12:08:40,552 --> 12:08:44,720
+command s on macintosh or control s on windows linux and that's going to do the
+
+
+146
+12:08:44,720 --> 12:08:48,080
+formatting the first one is called weak password so
+
+
+147
+12:08:48,080 --> 12:08:53,192
+let's just say context lock and also import this
+
+
+148
+12:08:53,192 --> 12:08:58,400
+and this message is register error weak password so weak password
+
+
+149
+12:08:58,400 --> 12:09:02,800
+like that the next one is called context log and
+
+
+150
+12:09:02,800 --> 12:09:10,480
+it's called an email already in use okay fail to register i've called register
+
+
+151
+12:09:10,480 --> 12:09:12,720
+error generic
+
+
+152
+12:09:12,720 --> 12:09:16,400
+so context lock generic
+
+
+153
+12:09:16,400 --> 12:09:22,320
+here it's register error generic and this invalid email is called context
+
+
+154
+12:09:22,320 --> 12:09:27,440
+lock and register invalid email okay so those are our errors we didn't have
+
+
+155
+12:09:27,440 --> 12:09:30,960
+to change anything with constant because these messages weren't constant when
+
+
+156
+12:09:30,960 --> 12:09:34,872
+they were passed into this constructor
+
+
+157
+12:09:34,872 --> 12:09:39,512
+then we have to fix this register's title and it's just called a register so
+
+
+158
+12:09:39,512 --> 12:09:44,320
+i'm going to remove the con const i'm going to say context log register
+
+
+159
+12:09:44,320 --> 12:09:47,760
+here and then we have enter your email and
+
+
+160
+12:09:47,760 --> 12:09:52,720
+password to see your notes and i've called that the register view prompt
+
+
+161
+12:09:52,720 --> 12:09:58,960
+so context lock register view prompt we have this input declaration again
+
+
+162
+12:09:58,960 --> 12:10:03,272
+we've done this before with the email and password so it's nothing surprising
+
+
+163
+12:10:03,272 --> 12:10:08,320
+so let's just say context block email placeholder and this one is
+
+
+164
+12:10:08,320 --> 12:10:11,912
+a password placeholder so let's remove the const
+
+
+165
+12:10:11,912 --> 12:10:18,960
+a context lock password placeholder all right so that's that
+
+
+166
+12:10:18,960 --> 12:10:22,800
+then we have the register button that we also have to
+
+
+167
+12:10:22,800 --> 12:10:27,512
+localize and let's remove the constant here and just say context
+
+
+168
+12:10:27,512 --> 12:10:31,760
+lock register and already registered is called already
+
+
+169
+12:10:31,760 --> 12:10:35,912
+registered so let's remove the constant const as well
+
+
+170
+12:10:35,912 --> 12:10:39,592
+and we say context lock already registered
+
+
+171
+12:10:39,592 --> 12:10:43,040
+all right and a comma at the end as well and we could do the same thing in here
+
+
+172
+12:10:43,040 --> 12:10:46,552
+with a comma at the end just to do the formatting right okay
+
+
+173
+12:10:46,552 --> 12:10:51,440
+so this seems to be ready we've now localized the register view
+
+
+174
+12:10:51,440 --> 12:10:55,680
+and the next step is to localize the verify email view so i'm going to close
+
+
+175
+12:10:55,680 --> 12:11:00,000
+this file and let's go ahead to verify email view
+
+
+176
+12:11:00,000 --> 12:11:04,800
+and again we have two unused imports let's remove those and let's go ahead to
+
+
+177
+12:11:04,800 --> 12:11:08,960
+verify email in here and we've just called it verify email so i'm removing
+
+
+178
+12:11:08,960 --> 12:11:14,080
+removing const saying context of lock and
+
+
+179
+12:11:14,080 --> 12:11:18,960
+let's say verify email okay and this is one thing that i've also fixed and you
+
+
+180
+12:11:18,960 --> 12:11:23,120
+could see that in how we've developed the application so far we have two
+
+
+181
+12:11:23,120 --> 12:11:27,192
+texts on top of the verify email view and they kind of look like this if i
+
+
+182
+12:11:27,192 --> 12:11:30,160
+bring it up let's go to
+
+
+183
+12:11:30,160 --> 12:11:33,440
+try to log in with a user who hasn't verified
+
+
+184
+12:11:33,440 --> 12:11:36,160
+his email
+
+
+185
+12:11:36,872 --> 12:11:39,760
+and you can see we end up here we've sent you an email verification please
+
+
+186
+12:11:39,760 --> 12:11:43,512
+open it to verify your account and this is like there are two text
+
+
+187
+12:11:43,512 --> 12:11:48,640
+fields but what i've done is i've made it one text prompt so let's just remove
+
+
+188
+12:11:48,640 --> 12:11:54,640
+the second text field and the way i've created this it's um if we go to our
+
+
+189
+12:11:54,640 --> 12:11:59,680
+intel en rb and if you look at the verify
+
+
+190
+12:11:59,680 --> 12:12:03,192
+prompt you can see i've written we've sent you an email verification please
+
+
+191
+12:12:03,192 --> 12:12:06,232
+open on your open it to verify your account and then
+
+
+192
+12:12:06,232 --> 12:12:11,040
+the rest of the string it just follows along so it's just one paragraph
+
+
+193
+12:12:11,040 --> 12:12:15,192
+and so that's why we're removing the second text in here
+
+
+194
+12:12:15,192 --> 12:12:19,440
+so and we're gonna remove this const i'm gonna remove the text
+
+
+195
+12:12:19,440 --> 12:12:23,760
+and then we're going to say context lock
+
+
+196
+12:12:23,760 --> 12:12:28,400
+verify prompt okay and a comma
+
+
+197
+12:12:28,400 --> 12:12:32,720
+we have this a little text button in here that says send email verification
+
+
+198
+12:12:32,720 --> 12:12:37,440
+and this looks like this let's change that as well and here we're
+
+
+199
+12:12:37,440 --> 12:12:41,192
+gonna say context lock
+
+
+200
+12:12:41,192 --> 12:12:47,592
+and it is called verify send email verification put a comma here
+
+
+201
+12:12:47,592 --> 12:12:50,160
+okay and for the restart button we have a
+
+
+202
+12:12:50,160 --> 12:12:54,480
+restart text so we're just going to say context log restart
+
+
+203
+12:12:54,480 --> 12:12:59,360
+and a comma at the end all right so that's the localization of this
+
+
+204
+12:12:59,360 --> 12:13:04,080
+screen as well so we could say we're pretty much done with the verify email
+
+
+205
+12:13:04,080 --> 12:13:08,232
+localization as well and while we're here to be honest with
+
+
+206
+12:13:08,232 --> 12:13:12,232
+you we could also clean up a little bit here in this verify email while we're
+
+
+207
+12:13:12,232 --> 12:13:16,800
+basically cleaning up the view itself you can see that this text doesn't have
+
+
+208
+12:13:16,800 --> 12:13:21,832
+any padding what we could do is to in this whole column actually
+
+
+209
+12:13:21,832 --> 12:13:26,232
+maybe pad this text so we're going to say this text is padded wrap it with a
+
+
+210
+12:13:26,232 --> 12:13:29,832
+padding okay and we could just say padding of 16. so
+
+
+211
+12:13:29,832 --> 12:13:33,832
+you can see now it is a little bit cleaner it's just a very little uh
+
+
+212
+12:13:33,832 --> 12:13:37,832
+effort to make the the ui look a lot cleaner okay
+
+
+213
+12:13:37,832 --> 12:13:42,640
+so we're done with that screen and what we need to do um we need to actually
+
+
+214
+12:13:42,640 --> 12:13:46,720
+localize the create update node view so let's go ahead to create update note
+
+
+215
+12:13:46,720 --> 12:13:50,960
+view another unused import let's remove that
+
+
+216
+12:13:50,960 --> 12:13:54,320
+and let's have a look at what exactly we have to
+
+
+217
+12:13:54,320 --> 12:13:58,720
+localize in here it's probably the the views title so if we scroll down to
+
+
+218
+12:13:58,720 --> 12:14:02,480
+where we're displaying the new note so if i log in with the user who has
+
+
+219
+12:14:02,480 --> 12:14:06,640
+verified his email address this user
+
+
+220
+12:14:06,640 --> 12:14:09,272
+our baz horrible password please don't use that
+
+
+221
+12:14:09,272 --> 12:14:12,400
+password at the moment you can see in here
+
+
+222
+12:14:12,400 --> 12:14:17,040
+we're basically saying um sorry new note here
+
+
+223
+12:14:17,040 --> 12:14:21,912
+we're saying new note and that's this thing so let's just change that and say
+
+
+224
+12:14:21,912 --> 12:14:26,640
+context dot lock auto import disk oops how to
+
+
+225
+12:14:26,640 --> 12:14:30,640
+import this and then we're just going to say note
+
+
+226
+12:14:30,640 --> 12:14:33,440
+okay and you can see in the documentation it
+
+
+227
+12:14:33,440 --> 12:14:37,440
+says it just in the english one says note so here we're not saying new notes
+
+
+228
+12:14:37,440 --> 12:14:40,552
+and the reason behind that is that up until this point our application is
+
+
+229
+12:14:40,552 --> 12:14:45,360
+being say new notes but what happens if you tap on an existing note
+
+
+230
+12:14:45,360 --> 12:14:48,872
+it still says new note so that's the reason i've decided to basically change
+
+
+231
+12:14:48,872 --> 12:14:52,800
+this text just to say note and put a comma in here to prepare for
+
+
+232
+12:14:52,800 --> 12:14:56,320
+the next person as well and what we're going to do and is also
+
+
+233
+12:14:56,320 --> 12:15:01,440
+to change this text decoration and which is here it says start typing your note
+
+
+234
+12:15:01,440 --> 12:15:06,720
+okay so remove the const and then in here we call it start typing
+
+
+235
+12:15:06,720 --> 12:15:11,512
+your note so context log start typing your note
+
+
+236
+12:15:11,512 --> 12:15:15,360
+all right great so we're going to save that as well
+
+
+237
+12:15:15,360 --> 12:15:20,320
+and we're done with that so now we're going to go to localizing our
+
+
+238
+12:15:20,320 --> 12:15:24,080
+notes view and this is i would say this is like the most exciting localization
+
+
+239
+12:15:24,080 --> 12:15:28,232
+part because we need to do some more coding it's not
+
+
+240
+12:15:28,232 --> 12:15:33,120
+as easy so for just two just to because remember in
+
+
+241
+12:15:33,120 --> 12:15:37,360
+the beginning of this chapter i mentioned that arb files are more than
+
+
+242
+12:15:37,360 --> 12:15:41,680
+just normal json in that they can have logic in them and at the moment if we go
+
+
+243
+12:15:41,680 --> 12:15:46,960
+back to our let's see if i bring scr cpy here at the
+
+
+244
+12:15:46,960 --> 12:15:49,592
+moment you can see it just says your notes
+
+
+245
+12:15:49,592 --> 12:15:53,592
+and i wanted to kind of demonstrate how arb files can be quite dynamic and can
+
+
+246
+12:15:53,592 --> 12:15:57,272
+have logic in them and i thought okay how do i demonstrate that to you and
+
+
+247
+12:15:57,272 --> 12:16:00,232
+what i decided to do is um
+
+
+248
+12:16:00,232 --> 12:16:02,480
+that if you
+
+
+249
+12:16:02,480 --> 12:16:06,720
+land in this page and you have no notes like in this case at the moment it says
+
+
+250
+12:16:06,720 --> 12:16:12,160
+your notes but what we're gonna do is to say okay we have some some key in our
+
+
+251
+12:16:12,160 --> 12:16:17,272
+localization file that is called your notes okay or sorry it's called notes
+
+
+252
+12:16:17,272 --> 12:16:20,552
+title is a key but this key is going to have
+
+
+253
+12:16:20,552 --> 12:16:25,160
+some value that has actual logic in it and this logic has to do with the plural
+
+
+254
+12:16:25,160 --> 12:16:29,832
+pluralization of this key if you have no notes
+
+
+255
+12:16:29,832 --> 12:16:33,760
+in english we're going to say no notes yet
+
+
+256
+12:16:33,760 --> 12:16:38,800
+if you have one note it's just gonna say one note
+
+
+257
+12:16:38,800 --> 12:16:43,192
+and if you have other number of notes such as two three
+
+
+258
+12:16:43,192 --> 12:16:46,832
+four then it's going to say x
+
+
+259
+12:16:46,832 --> 12:16:51,192
+notes for instance x being three notes four notes so it's just gonna say four
+
+
+260
+12:16:51,192 --> 12:16:56,640
+notes so no notes yet one note or x notes
+
+
+261
+12:16:56,640 --> 12:17:02,000
+so it has pluralization built into it and how we have to do that is to use
+
+
+262
+12:17:02,000 --> 12:17:07,360
+something in arb called placeholders and i'll show you how to do that right now
+
+
+263
+12:17:07,360 --> 12:17:13,192
+so let's go ahead first into our intel en
+
+
+264
+12:17:13,192 --> 12:17:16,160
+and at the bottom of the screen here what we're going to do is to first
+
+
+265
+12:17:16,160 --> 12:17:18,552
+create our key so that's the most important one okay so we're going to
+
+
+266
+12:17:18,552 --> 12:17:21,512
+call it notes title and in here we know that we're going to
+
+
+267
+12:17:21,512 --> 12:17:27,912
+have some value and let's see we have also a semi sorry a colon there okay
+
+
+268
+12:17:27,912 --> 12:17:33,040
+so we have notes title how do we put our logic in here
+
+
+269
+12:17:33,040 --> 12:17:38,320
+we just know that we need to have some sort of a
+
+
+270
+12:17:38,320 --> 12:17:42,480
+account you see your localization arb file doesn't know
+
+
+271
+12:17:42,480 --> 12:17:46,320
+anything about the count because it's the application that knows how many
+
+
+272
+12:17:46,320 --> 12:17:50,000
+nodes are available in the in the fire store database so
+
+
+273
+12:17:50,000 --> 12:17:54,232
+somehow we need to pass this count to our application
+
+
+274
+12:17:54,232 --> 12:17:59,192
+sorry to our arb file and you do that with parameterization so you go ahead
+
+
+275
+12:17:59,192 --> 12:18:03,040
+and create curly brackets in here and you would say okay hey i want to have a
+
+
+276
+12:18:03,040 --> 12:18:08,552
+parameter called count this count needs to be passed to this
+
+
+277
+12:18:08,552 --> 12:18:12,000
+um notes title in order for it to be able
+
+
+278
+12:18:12,000 --> 12:18:15,592
+to calculate exactly what it has to return so it's just you
+
+
+279
+12:18:15,592 --> 12:18:20,800
+saying that hey application if you want to get the notes title localized string
+
+
+280
+12:18:20,800 --> 12:18:24,720
+you have to pass a parameter to me call count okay
+
+
+281
+12:18:24,720 --> 12:18:29,360
+now what we're going to do is to go and call and basically and create discount
+
+
+282
+12:18:29,360 --> 12:18:33,680
+as a parameter so what you have to do is to go to the next line and just say adds
+
+
+283
+12:18:33,680 --> 12:18:38,320
+notes title this is how you tell arb that hey
+
+
+284
+12:18:38,320 --> 12:18:43,512
+this notes title key has some extra logic in it okay
+
+
+285
+12:18:43,512 --> 12:18:46,872
+then there is a key in here called placeholders
+
+
+286
+12:18:46,872 --> 12:18:51,760
+so you have to write placeholders okay and in here basically you say
+
+
+287
+12:18:51,760 --> 12:18:57,760
+placeholders and then every key is the name of the parameter itself so account
+
+
+288
+12:18:57,760 --> 12:19:02,000
+all right and then you basically start that and then what you have to do is you
+
+
+289
+12:19:02,000 --> 12:19:04,960
+have to define two keys in here one is a type
+
+
+290
+12:19:04,960 --> 12:19:09,272
+and the oops type and then the other one is an
+
+
+291
+12:19:09,272 --> 12:19:11,680
+example
+
+
+292
+12:19:11,912 --> 12:19:16,080
+like this so let's have a look at how this actually looks like
+
+
+293
+12:19:16,080 --> 12:19:19,120
+so basically what we're telling and
+
+
+294
+12:19:19,120 --> 12:19:24,960
+arb is that or dart in this case we're saying that hey this notes title key in
+
+
+295
+12:19:24,960 --> 12:19:31,040
+our arab has a parameter called count and in in here we're saying hey
+
+
+296
+12:19:31,040 --> 12:19:34,160
+these are the placeholders the name it's count and it's type now you have to
+
+
+297
+12:19:34,160 --> 12:19:36,800
+define a type you have to actually tell dart that hey
+
+
+298
+12:19:36,800 --> 12:19:40,232
+what data type is this using is it a string is it's an integer is it a
+
+
+299
+12:19:40,232 --> 12:19:44,320
+boolean what is it so in here you just say it's an integer and then as you'll
+
+
+300
+12:19:44,320 --> 12:19:49,680
+see soon the code generation then has a look at this and says okay i expect you
+
+
+301
+12:19:49,680 --> 12:19:53,680
+to send an integer and it's going to create a function called node's title
+
+
+302
+12:19:53,680 --> 12:19:58,480
+with account a parameter of type integer so this is very important it's the data
+
+
+303
+12:19:58,480 --> 12:20:03,512
+type of that count parameter okay and an example is just for you to know
+
+
+304
+12:20:03,512 --> 12:20:07,592
+okay how is this going to be used so an example is for instance three nodes okay
+
+
+305
+12:20:07,592 --> 12:20:10,400
+so we're just going to say here's an example of how the result of this thing
+
+
+306
+12:20:10,400 --> 12:20:13,832
+can look like right
+
+
+307
+12:20:13,832 --> 12:20:20,080
+so what we need to do now is to tell this um erb and dart code generator here
+
+
+308
+12:20:20,080 --> 12:20:25,592
+that this count actually has a logic about it being plural so it has
+
+
+309
+12:20:25,592 --> 12:20:29,440
+pluralization logic and the way to do that is you put a comma here and you say
+
+
+310
+12:20:29,440 --> 12:20:33,592
+plural and a comma after that because then you have to specify the logic for
+
+
+311
+12:20:33,592 --> 12:20:36,640
+that pluralization so and look
+
+
+312
+12:20:36,640 --> 12:20:41,272
+as a side note i completely understand that this is so weird i mean it is a
+
+
+313
+12:20:41,272 --> 12:20:46,480
+strange syntax i don't feel comfortable with it i sometimes use i sometimes look
+
+
+314
+12:20:46,480 --> 12:20:49,120
+at the documentation just to be a reminder of this
+
+
+315
+12:20:49,120 --> 12:20:52,960
+logic but the way i look at it is that it's the best thing we have let's not
+
+
+316
+12:20:52,960 --> 12:20:57,272
+hate on it let's just use it let's understand that it has power there are
+
+
+317
+12:20:57,272 --> 12:21:02,400
+reasons for it being the way it is and even though we are not 100
+
+
+318
+12:21:02,400 --> 12:21:04,232
+like in
+
+
+319
+12:21:04,232 --> 12:21:07,192
+in we weren't involved in the reasoning of this we don't even know what the
+
+
+320
+12:21:07,192 --> 12:21:10,320
+reasoning is but this is what the format is and this is what we have to basically
+
+
+321
+12:21:10,320 --> 12:21:16,480
+go with so the way to create this is for you to
+
+
+322
+12:21:16,480 --> 12:21:19,120
+uh have your logic in here so we're going
+
+
+323
+12:21:19,120 --> 12:21:25,360
+to say equal to zero and let's just do it like this and then
+
+
+324
+12:21:25,360 --> 12:21:30,080
+we're gonna say equal to one and then we're gonna say other
+
+
+325
+12:21:30,080 --> 12:21:33,440
+okay so this is how you create it so you're
+
+
+326
+12:21:33,440 --> 12:21:37,592
+saying that if the value of this count is zero
+
+
+327
+12:21:37,592 --> 12:21:42,800
+then we are going to do something here if the value of that count is one we're
+
+
+328
+12:21:42,800 --> 12:21:46,800
+gonna do something here and if it's anything else denoted by other we're
+
+
+329
+12:21:46,800 --> 12:21:50,960
+gonna do something in here so let's say when it's equal to zero we're gonna say
+
+
+330
+12:21:50,960 --> 12:21:54,160
+no notes yet okay so that's the string
+
+
+331
+12:21:54,160 --> 12:21:58,872
+we're gonna display if the count is zero if it's equal to one we're just going to
+
+
+332
+12:21:58,872 --> 12:22:03,192
+say one note and then the important thing is if we
+
+
+333
+12:22:03,192 --> 12:22:07,360
+end up in this situation if it's other then we want to say in this case we
+
+
+334
+12:22:07,360 --> 12:22:11,592
+actually want to get the count so if you pass the value of three we want to say
+
+
+335
+12:22:11,592 --> 12:22:16,400
+three notes so the way to get that count is with another curly bracket pair and
+
+
+336
+12:22:16,400 --> 12:22:20,000
+you say count and then you say notes okay
+
+
+337
+12:22:20,000 --> 12:22:25,680
+so that's how you create these things so um and i think we're actually missing a
+
+
+338
+12:22:25,680 --> 12:22:31,120
+curly bracket and that is the the curly bracket at the end yes
+
+
+339
+12:22:31,120 --> 12:22:34,800
+this curly bracket which belongs to like if we
+
+
+340
+12:22:34,800 --> 12:22:40,232
+if you look here if i remove these
+
+
+341
+12:22:40,232 --> 12:22:43,832
+the other has two curly brackets and
+
+
+342
+12:22:43,832 --> 12:22:49,592
+it's two curly brackets and here other one curly bracket there one curly
+
+
+343
+12:22:49,592 --> 12:22:55,440
+bracket here one ends here and one ends here so this last curly bracket here is
+
+
+344
+12:22:55,440 --> 12:23:00,400
+for the curly bracket that started here so again i i don't know what to say this
+
+
+345
+12:23:00,400 --> 12:23:04,960
+is the format the way it is we just have to live with it okay so we've created
+
+
+346
+12:23:04,960 --> 12:23:08,640
+the notes title and what we're going to do is to go ahead and do the same thing
+
+
+347
+12:23:08,640 --> 12:23:12,480
+but for swedish and i've already prepared that so i'm just going to go
+
+
+348
+12:23:12,480 --> 12:23:16,232
+ahead and grab that string from the swedish one that i've
+
+
+349
+12:23:16,232 --> 12:23:20,552
+already made so we don't have to type all that again
+
+
+350
+12:23:20,552 --> 12:23:23,592
+so let me go and grab that and bring it into
+
+
+351
+12:23:23,592 --> 12:23:27,592
+l10n sv which is for swedish and then bring
+
+
+352
+12:23:27,592 --> 12:23:32,080
+it at the bottom of the screen and paste it right there and with a
+
+
+353
+12:23:32,080 --> 12:23:37,680
+comma at the end of that line so you can see plural and it says no notes yet
+
+
+354
+12:23:37,680 --> 12:23:42,080
+for one it says one note and for other it just says
+
+
+355
+12:23:42,080 --> 12:23:45,272
+x notes all right
+
+
+356
+12:23:45,272 --> 12:23:48,960
+so i'm gonna save this i'm gonna save this and i'm gonna do a hot restart
+
+
+357
+12:23:48,960 --> 12:23:52,800
+let's just hope that scr cpy doesn't crash and it didn't
+
+
+358
+12:23:52,800 --> 12:23:57,272
+so what we're gonna do now is i was as it was planned we're gonna go to our
+
+
+359
+12:23:57,272 --> 12:24:00,160
+notes view and i'm gonna go to my notes as well
+
+
+360
+12:24:00,160 --> 12:24:05,912
+here let's go to notes view and have a look at our title in here
+
+
+361
+12:24:05,912 --> 12:24:09,832
+and you see we at the moment we're seeing your notes but what we really
+
+
+362
+12:24:09,832 --> 12:24:14,080
+want is to be able to display the number of notes that are
+
+
+363
+12:24:14,080 --> 12:24:20,000
+inside our um inside the nodes provider so if we have
+
+
+364
+12:24:20,000 --> 12:24:23,120
+a look at how we're reading the num and the notes you can see we're using the
+
+
+365
+12:24:23,120 --> 12:24:27,192
+note service and then we're saying all nodes and this is a stream
+
+
+366
+12:24:27,192 --> 12:24:32,232
+of an i triple of cloud nodes so we kind of wanted stream builder we want a
+
+
+367
+12:24:32,232 --> 12:24:36,560
+stream builder to create our title our app bar and we're going to exactly do
+
+
+368
+12:24:36,560 --> 12:24:40,080
+the same thing so we're going to have a stream builder that creates our app bar
+
+
+369
+12:24:40,080 --> 12:24:42,000
+okay but
+
+
+370
+12:24:42,000 --> 12:24:46,800
+or actually it's going to create the text but how do we get the count of
+
+
+371
+12:24:46,800 --> 12:24:50,640
+the notes and the way to do that is with a little handy extension that i'm going
+
+
+372
+12:24:50,640 --> 12:24:56,232
+to show you how to create so let's go in here in our notes view and
+
+
+373
+12:24:56,232 --> 12:25:00,232
+we're going to say extension and we're going to say count
+
+
+374
+12:25:00,232 --> 12:25:04,720
+and we want to create it on a stream so we're going to say any stream has to be
+
+
+375
+12:25:04,720 --> 12:25:08,560
+able to like any stream that has an iterable in it
+
+
+376
+12:25:08,560 --> 12:25:12,952
+that its values are iterable we want to create a
+
+
+377
+12:25:12,952 --> 12:25:17,112
+property called length for instance that it gets the length so
+
+
+378
+12:25:17,112 --> 12:25:22,080
+let's go in here and say okay this stream has some value but we want that
+
+
+379
+12:25:22,080 --> 12:25:24,872
+value to be iterable
+
+
+380
+12:25:24,872 --> 12:25:30,640
+okay so here we're basically saying that we're extending any stream that contains
+
+
+381
+12:25:30,640 --> 12:25:35,440
+uh i troubles as its value is gonna have this extension
+
+
+382
+12:25:35,440 --> 12:25:38,872
+then we're gonna say okay the value of this is gonna be an hint
+
+
+383
+12:25:38,872 --> 12:25:43,280
+and we're going to call it get links okay
+
+
+384
+12:25:43,280 --> 12:25:46,000
+and what this is basically going to do is to
+
+
+385
+12:25:46,000 --> 12:25:51,440
+say it maps the stream's values so let's say event
+
+
+386
+12:25:51,440 --> 12:25:55,672
+and in here we just say it returns the event's length so i understand this may
+
+
+387
+12:25:55,672 --> 12:25:59,032
+be a little bit cryptic for you to understand but um
+
+
+388
+12:25:59,032 --> 12:26:04,640
+you have to know that every stream is a generic function like if you sorry
+
+
+389
+12:26:04,640 --> 12:26:08,800
+it's a generic class you can see it's abstract class it's it has a parameter
+
+
+390
+12:26:08,800 --> 12:26:13,840
+called t which is it's generic type so what we're saying here we're saying that
+
+
+391
+12:26:13,840 --> 12:26:18,872
+okay we're creating an extension on any stream whose parameters or whose types
+
+
+392
+12:26:18,872 --> 12:26:22,392
+are and i treble and iterable has a length
+
+
+393
+12:26:22,392 --> 12:26:26,488
+and that means that we can then extend and extend any stream that has an i
+
+
+394
+12:26:26,488 --> 12:26:30,800
+treble and then we return its property called get length okay
+
+
+395
+12:26:30,800 --> 12:26:37,200
+so what we need to do now is to go ahead and inside the app bar in here
+
+
+396
+12:26:37,200 --> 12:26:41,920
+we have a const text when we need to remove this const first actually let's
+
+
+397
+12:26:41,920 --> 12:26:46,232
+keep it and i'm gonna see if we can wrap this with a stream
+
+
+398
+12:26:46,232 --> 12:26:50,800
+builder now okay so in here what we're gonna do is we're saying here's a stream
+
+
+399
+12:26:50,800 --> 12:26:55,200
+builder and we don't yet know what it is it's stream is
+
+
+400
+12:26:55,200 --> 12:27:01,280
+note service like this and we have all notes
+
+
+401
+12:27:01,280 --> 12:27:08,160
+and the owner user id is our user id okay as exactly as we have it here
+
+
+402
+12:27:08,160 --> 12:27:11,672
+okay but here the stream we don't actually want the notes we want the
+
+
+403
+12:27:11,672 --> 12:27:14,952
+length of notes so let's just say get length
+
+
+404
+12:27:14,952 --> 12:27:21,032
+where is it here get length okay and now we know that snapshot can then
+
+
+405
+12:27:21,032 --> 12:27:26,872
+return that uh value for us so if i press command s in here let's put a
+
+
+406
+12:27:26,872 --> 12:27:31,032
+comma here as well you can see nothing has changed it just
+
+
+407
+12:27:31,032 --> 12:27:34,000
+says your notes because we're still seeing your notes in here okay but what
+
+
+408
+12:27:34,000 --> 12:27:39,032
+we want is to grab the data out of our snapshot and this snapshot is an async
+
+
+409
+12:27:39,032 --> 12:27:42,640
+snapshot of an integer
+
+
+410
+12:27:42,640 --> 12:27:47,920
+let's see undefined class it's called async snapshots yeah just like that all
+
+
+411
+12:27:47,920 --> 12:27:50,952
+right so you either could tell a stream
+
+
+412
+12:27:50,952 --> 12:27:54,160
+builder of int and then your snapshot i believe
+
+
+413
+12:27:54,160 --> 12:27:59,112
+automatically will be as facing snatch out of it or you could
+
+
+414
+12:27:59,112 --> 12:28:02,800
+just say stream builder normal stream builder and an async snapshot of it so
+
+
+415
+12:28:02,800 --> 12:28:06,312
+you could type it in two different ways and i've just chosen to do it this way
+
+
+416
+12:28:06,312 --> 12:28:09,920
+all right what we need to do in here is to see as
+
+
+417
+12:28:09,920 --> 12:28:14,640
+soon as snapshot has data then we grab that data which means it has the length
+
+
+418
+12:28:14,640 --> 12:28:19,752
+built into it okay so we're going to say if snapshot has
+
+
+419
+12:28:19,752 --> 12:28:24,160
+data which means it has length otherwise we're just going to return
+
+
+420
+12:28:24,160 --> 12:28:29,112
+const of text nothing meaning that well well we don't have anything to display
+
+
+421
+12:28:29,112 --> 12:28:32,640
+at the top of the screen if this snapshot has no text all right
+
+
+422
+12:28:32,640 --> 12:28:36,488
+and then in here we're going to say it's going to say final note count
+
+
+423
+12:28:36,488 --> 12:28:40,312
+is snapchat date okay
+
+
+424
+12:28:40,312 --> 12:28:44,640
+or zero because it just says yeah i may not have data
+
+
+425
+12:28:44,640 --> 12:28:47,440
+just strange because you're actually saying has data but these two properties
+
+
+426
+12:28:47,440 --> 12:28:50,000
+are kind of like they're different from you i mean
+
+
+427
+12:28:50,000 --> 12:28:53,032
+they're not different but they're separated from each other just because
+
+
+428
+12:28:53,032 --> 12:28:56,312
+you're checking something has data doesn't mean necessarily that the next
+
+
+429
+12:28:56,312 --> 12:29:00,000
+line should understand that it has data the data type
+
+
+430
+12:29:00,000 --> 12:29:04,800
+of this data property is still final t so you can't change that okay and that's
+
+
+431
+12:29:04,800 --> 12:29:08,392
+why we have this um elvis sign kind of here
+
+
+432
+12:29:08,392 --> 12:29:12,000
+or a question mark question mark just to say if this doesn't have any value just
+
+
+433
+12:29:12,000 --> 12:29:15,440
+use zero okay now that we have node count we have to
+
+
+434
+12:29:15,440 --> 12:29:18,872
+get that context block
+
+
+435
+12:29:18,872 --> 12:29:23,112
+and we oh we don't have log let's import that
+
+
+436
+12:29:23,112 --> 12:29:28,800
+and remember the key that we used intel me and it's called notes title let's say
+
+
+437
+12:29:28,800 --> 12:29:33,440
+notes title and now all of a sudden you can see it is a function that takes in
+
+
+438
+12:29:33,440 --> 12:29:38,160
+an integer hello that's the count integer that we built into our arb and
+
+
+439
+12:29:38,160 --> 12:29:42,080
+it returns a string you can see here that's perfect because then we can pass
+
+
+440
+12:29:42,080 --> 12:29:44,872
+the note count in here okay
+
+
+441
+12:29:44,872 --> 12:29:48,312
+and this will be our text
+
+
+442
+12:29:49,440 --> 12:29:52,560
+and then we could just say return
+
+
+443
+12:29:52,560 --> 12:29:56,392
+a text widget with that text in it just like this
+
+
+444
+12:29:56,392 --> 12:29:59,280
+all right and then we can save this and as you can
+
+
+445
+12:29:59,280 --> 12:30:03,360
+see now as soon as i hit command s it says no notes yet
+
+
+446
+12:30:03,360 --> 12:30:07,840
+if i say and if i press the plus button here you can see i can type something in
+
+
+447
+12:30:07,840 --> 12:30:12,080
+here and i go back it says onenote if i create another one
+
+
+448
+12:30:12,080 --> 12:30:16,000
+on top of the screen it says two notes and that's it pretty much that's the
+
+
+449
+12:30:16,000 --> 12:30:19,592
+logic that we built into it so now it says onenote delete that note and it
+
+
+450
+12:30:19,592 --> 12:30:24,312
+says no notes yet perfect so that logic seems to be working fine for us
+
+
+451
+12:30:24,312 --> 12:30:27,920
+so that's that part and we also have another string at the bottom of this
+
+
+452
+12:30:27,920 --> 12:30:33,512
+screen which says log out and we have to change this as well so
+
+
+453
+12:30:33,512 --> 12:30:39,360
+we have to say context log out button
+
+
+454
+12:30:39,360 --> 12:30:44,640
+and this error is because we it says invalid constant but you're like oh but
+
+
+455
+12:30:44,640 --> 12:30:48,800
+this is not a constant well the problem is a little bit higher up in that when
+
+
+456
+12:30:48,800 --> 12:30:52,080
+we created this array of pop-up menu items we said that is a constant so
+
+
+457
+12:30:52,080 --> 12:30:57,752
+let's remove that okay so that's fantastic and that is i mean
+
+
+458
+12:30:57,752 --> 12:31:01,360
+now we're pretty much done in the entire application we don't have
+
+
+459
+12:31:01,360 --> 12:31:05,440
+anything any string that is hard coded and if you look at our problems
+
+
+460
+12:31:05,440 --> 12:31:09,512
+section there are no problems to fix for instance no unused imports so we've
+
+
+461
+12:31:09,512 --> 12:31:13,280
+taken care of those as well and just to test this what we could do is just to go
+
+
+462
+12:31:13,280 --> 12:31:16,640
+to the settings screen here and i'm going to bring swedish up
+
+
+463
+12:31:16,640 --> 12:31:20,312
+and let's go back to our application here and have a look and it says no
+
+
+464
+12:31:20,312 --> 12:31:24,000
+notes yet i'm going to press the plus button and i'm going to write some
+
+
+465
+12:31:24,000 --> 12:31:27,200
+string go back here it says one note
+
+
+466
+12:31:27,200 --> 12:31:33,032
+create a new one and it says two notes delete this one and all the you see all
+
+
+467
+12:31:33,032 --> 12:31:37,280
+the dialogues are now in swedish yes delete this note
+
+
+468
+12:31:37,280 --> 12:31:41,360
+yes let's try to log out now and it says log look at it
+
+
+469
+12:31:41,360 --> 12:31:44,312
+and it says look go to add a second by the way look at it are you sure you want
+
+
+470
+12:31:44,312 --> 12:31:49,200
+to log out yes log out and you can see all our strings here basically are also
+
+
+471
+12:31:49,200 --> 12:31:52,000
+um everything in this screen is also
+
+
+472
+12:31:52,000 --> 12:31:57,360
+localized so that's fantastic we basically did what we
+
+
+473
+12:31:57,360 --> 12:32:02,392
+were supposed to do and what we promised to do and that is great congratulations
+
+
+474
+12:32:02,392 --> 12:32:06,080
+if you then and do what we usually do at the end of every chapter we
+
+
+475
+12:32:06,080 --> 12:32:10,160
+commit our work so i'm gonna have a look at this and let's have a look at our
+
+
+476
+12:32:10,160 --> 12:32:13,440
+good status and have a look at our git log as well
+
+
+477
+12:32:13,440 --> 12:32:17,032
+i'm gonna change the screen layout a little bit sorry about that so you see
+
+
+478
+12:32:17,032 --> 12:32:22,872
+the code better remove scr cpy make this full screen
+
+
+479
+12:32:22,872 --> 12:32:28,080
+okay i'm gonna make this a lot larger so you see better
+
+
+480
+12:32:28,080 --> 12:32:32,800
+and have a look at git log again and you can see the last one we did git step
+
+
+481
+12:32:32,800 --> 12:32:37,920
+sorry step 31 so let's just say git add
+
+
+482
+12:32:38,080 --> 12:32:42,080
+all hit commits that 32
+
+
+483
+12:32:42,080 --> 12:32:45,280
+okay and get status
+
+
+484
+12:32:45,280 --> 12:32:49,752
+great and then we're also going to get push our changes
+
+
+485
+12:32:49,752 --> 12:32:55,200
+and let's tag it as well get tagged step 32
+
+
+486
+12:32:55,200 --> 12:33:01,112
+and if you look at our tag all our tags we can see 20 blah blah
+
+
+487
+12:33:01,112 --> 12:33:06,080
+let's see if we have 31 30 31 and 32 great and then we have to push our tags
+
+
+488
+12:33:06,080 --> 12:33:10,392
+as well fantastic so
+
+
+489
+12:33:10,392 --> 12:33:13,672
+um what we've done so far is i mean we've
+
+
+490
+12:33:13,672 --> 12:33:17,440
+done a lot of work and in this chapter even more we've localized our
+
+
+491
+12:33:17,440 --> 12:33:20,160
+application we looked at how localization works how code generation
+
+
+492
+12:33:20,160 --> 12:33:23,200
+for localization works and also we had a look at some
+
+
+493
+12:33:23,200 --> 12:33:26,560
+important extensions that you can create in order to make your localizations even
+
+
+494
+12:33:26,560 --> 12:33:32,232
+work better for flutter and we also had a look at adding some logic to our arb
+
+
+495
+12:33:32,232 --> 12:33:36,312
+file with pluralization so congratulations for going through this
+
+
+496
+12:33:36,312 --> 12:33:38,560
+chapter i believe personally that is very important to localize your
+
+
+497
+12:33:38,560 --> 12:33:42,160
+applications you're going to reach a lot more users if you localize your
+
+
+498
+12:33:42,160 --> 12:33:47,200
+applications correctly for your for like your target markets
+
+
+499
+12:33:47,200 --> 12:33:51,280
+and um it should help your users also feel more connected to your application
+
+
+500
+12:33:51,280 --> 12:33:55,280
+so um with that said i may actually then
+
+
+501
+12:33:55,280 --> 12:34:00,640
+see you in the next chapter hello everyone i can't say welcome to
+
+
+502
+12:34:00,640 --> 12:34:04,560
+this chapter now because this is not really a chapter on its own rather it is
+
+
+503
+12:34:04,560 --> 12:34:08,952
+the outro to this course and i don't know it's a kind of a bittersweet moment
+
+
+504
+12:34:08,952 --> 12:34:13,672
+because uh i've had so much fun putting this course together for you and now i
+
+
+505
+12:34:13,672 --> 12:34:16,560
+have to say goodbye and um
+
+
+506
+12:34:16,560 --> 12:34:22,232
+i don't want to get emotional but it is kind of sad uh as it is a great moment
+
+
+507
+12:34:22,232 --> 12:34:25,112
+of appreciation for you having gone through
+
+
+508
+12:34:25,112 --> 12:34:29,512
+this course and also i want to really extend like
+
+
+509
+12:34:29,512 --> 12:34:32,560
+and congratulate you for having gone through
+
+
+510
+12:34:32,560 --> 12:34:37,592
+this course and having learned as as you've learned because it's it's not
+
+
+511
+12:34:37,592 --> 12:34:42,392
+an easy thing to do to go through such a lengthy course but as i mentioned in the
+
+
+512
+12:34:42,392 --> 12:34:46,080
+beginning of this um course if you remember in the
+
+
+513
+12:34:46,080 --> 12:34:51,440
+introduction i mentioned that um a lot of videos basically jump over
+
+
+514
+12:34:51,440 --> 12:34:54,872
+quite a lot of information and i didn't want to do that in this course and
+
+
+515
+12:34:54,872 --> 12:34:58,720
+that's why this course has become as
+
+
+516
+12:34:58,720 --> 12:35:03,112
+lengthy and long as it has so
+
+
+517
+12:35:03,112 --> 12:35:07,200
+we've gone through a lot we've talked not only about
+
+
+518
+12:35:07,200 --> 12:35:11,592
+flutter development but we've also got our hands dirty with some
+
+
+519
+12:35:11,592 --> 12:35:15,440
+native ios and not really development but all actually going to xcode and
+
+
+520
+12:35:15,440 --> 12:35:19,840
+fiddling around with some properties in info plus an excel project we've also
+
+
+521
+12:35:19,840 --> 12:35:26,232
+had to open android studio to create our virtual devices we've worked with
+
+
+522
+12:35:26,232 --> 12:35:31,512
+figma and design tool we work with app store connect and google play store
+
+
+523
+12:35:31,512 --> 12:35:36,312
+console so we've gone through a lot so and i want
+
+
+524
+12:35:36,312 --> 12:35:41,360
+to congratulate you for sticking throughout all this with me and
+
+
+525
+12:35:41,360 --> 12:35:47,592
+um hopefully you've also learned a lot now while designing this course i also
+
+
+526
+12:35:47,592 --> 12:35:51,440
+knew that it has to be a living material it can't just be something that i drop
+
+
+527
+12:35:51,440 --> 12:35:55,672
+out on the internet so i'm very much planning to keep everything up to date
+
+
+528
+12:35:55,672 --> 12:36:00,000
+but there's lots and lots that i've already planned
+
+
+529
+12:36:00,000 --> 12:36:04,560
+more to be added to this course so i can't really go into details about
+
+
+530
+12:36:04,560 --> 12:36:08,160
+what they are i haven't finalized them but just as i did with this course i
+
+
+531
+12:36:08,160 --> 12:36:12,080
+need to plan them correctly write all my scripts to know what i'm going to talk
+
+
+532
+12:36:12,080 --> 12:36:17,360
+about and plan even the code that i need to write to tell you all about so
+
+
+533
+12:36:17,360 --> 12:36:21,200
+just know that there's a lot more to come
+
+
+534
+12:36:21,200 --> 12:36:24,160
+and you can just subscribe to my youtube
+
+
+535
+12:36:24,160 --> 12:36:29,592
+channel if you want to keep up to date talking about up to date um
+
+
+536
+12:36:29,592 --> 12:36:33,440
+things are moving all the time we've been working with firebase for instance
+
+
+537
+12:36:33,440 --> 12:36:38,872
+and firebase in itself is a moving product so it's an update like ever
+
+
+538
+12:36:38,872 --> 12:36:42,720
+it's just always updating so new versions come out new versions of
+
+
+539
+12:36:42,720 --> 12:36:46,800
+flutter might come up come out and new versions of dart might come out so even
+
+
+540
+12:36:46,800 --> 12:36:49,920
+figma for instance that we've been using a lot the interface might change
+
+
+541
+12:36:49,920 --> 12:36:53,920
+erratically so since i put so much effort into creating
+
+
+542
+12:36:53,920 --> 12:36:58,232
+this course i don't want it to die and i'm not going to let it die so it's
+
+
+543
+12:36:58,232 --> 12:37:02,000
+always going to be updating every now and then i will be putting
+
+
+544
+12:37:02,000 --> 12:37:06,488
+and not only updated content out like maybe i need to replace some old content
+
+
+545
+12:37:06,488 --> 12:37:11,200
+with some new but i'm also planning on adding more to it so
+
+
+546
+12:37:11,200 --> 12:37:16,720
+let's just say that this course is gonna hopefully always be up to date
+
+
+547
+12:37:16,720 --> 12:37:21,032
+as i mentioned in the introduction of this course i have zero dollars
+
+
+548
+12:37:21,032 --> 12:37:25,752
+in a budget for marketing this course and marketing is
+
+
+549
+12:37:25,752 --> 12:37:30,488
+probably the wrong word because i don't actually earn any money by having this
+
+
+550
+12:37:30,488 --> 12:37:33,200
+course the only thing i earn is joy of having
+
+
+551
+12:37:33,200 --> 12:37:37,592
+um like people like you going through this course and telling me on social
+
+
+552
+12:37:37,592 --> 12:37:41,032
+media perhaps about oh hey i did this course and i learned this and this and
+
+
+553
+12:37:41,032 --> 12:37:43,440
+this and i've released my first application so
+
+
+554
+12:37:43,440 --> 12:37:47,592
+since i have um no budget for that i would really appreciate it if you could
+
+
+555
+12:37:47,592 --> 12:37:51,440
+spread the word about it and tell like if someone asked okay i need a course
+
+
+556
+12:37:51,440 --> 12:37:55,112
+for learning flutter uh it would be lovely and i would really
+
+
+557
+12:37:55,112 --> 12:37:59,032
+appreciate it if you could just tell them about this course
+
+
+558
+12:37:59,032 --> 12:38:02,952
+and um i've mentioned this also in the introduction but i would really
+
+
+559
+12:38:02,952 --> 12:38:08,952
+appreciate it if you could follow me on social media twitter at van.np and also
+
+
+560
+12:38:08,952 --> 12:38:12,232
+on linkedin because i produce quite a lot of content
+
+
+561
+12:38:12,232 --> 12:38:16,488
+and as infographics for instance also adds videos related to flutter
+
+
+562
+12:38:16,488 --> 12:38:22,952
+javascript python django react native swift you name it so even typescript now
+
+
+563
+12:38:22,952 --> 12:38:25,840
+these days so uh i would really appreciate it if you
+
+
+564
+12:38:25,840 --> 12:38:31,360
+could follow me on social media and uh i've been told in some places
+
+
+565
+12:38:31,360 --> 12:38:36,720
+that um by some some of you that maybe some people can actually support
+
+
+566
+12:38:36,720 --> 12:38:40,640
+me and if you want to do that this is the way to do it just going to
+
+
+567
+12:38:40,640 --> 12:38:45,512
+buy me a coffee.com but remember it is completely
+
+
+568
+12:38:45,512 --> 12:38:51,752
+optional it's only if you can afford it so with all that said i don't want to
+
+
+569
+12:38:51,752 --> 12:38:57,200
+drag on this outro i just want to say again a huge congratulations to you for
+
+
+570
+12:38:57,200 --> 12:39:02,872
+going through this course with me and spending your life during these so many
+
+
+571
+12:39:02,872 --> 12:39:08,640
+hours together with me and i've had a blast recording all these videos and uh
+
+
+572
+12:39:08,640 --> 12:39:14,312
+i'm sure this is not a good buy but rather an official end basically to this
+
+
+573
+12:39:14,312 --> 12:39:19,280
+course and keep an eye out for more content and i'm sure we'll talk to each
+
+
+574
+12:39:19,280 --> 12:39:23,232
+other on social media
